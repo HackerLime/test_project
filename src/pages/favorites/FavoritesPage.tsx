@@ -4,11 +4,16 @@ export const FavoritesPage = () => {
 
   const favorites = useFavorites()
 
+  if (favorites.length) {
+    return (
+      <>
+        {favorites.map(post => <Post key={post.id} id={post.id} title={post.title} body={post.body} />)}
+      </>
+    )
+  }
 
 
   return (
-    <>
-      {favorites.map(post => <Post key={post.id} id={post.id} title={post.title} body={post.body} />)}
-    </>
+    <h1>Посты не найдены!</h1>
   )
 }
