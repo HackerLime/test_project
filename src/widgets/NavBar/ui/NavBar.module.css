@@ -1,0 +1,18 @@
+.navBar__wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  background-color: #21252B;
+  border-bottom: 1px solid teal;
+  padding: 0 1em;
+}
+.navBar__container{
+max-width: 600px;
+margin: 0px auto;
+display: flex;
+justify-content: space-between;
+
+  
+}

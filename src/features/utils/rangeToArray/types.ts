@@ -1,0 +1,1 @@
+export type RangeArrayFunction = (start: number, end: number) => number[];
